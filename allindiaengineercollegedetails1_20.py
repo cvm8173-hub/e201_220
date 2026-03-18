@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/indira-gandhi-institute-of-engineering-technology-kothamangalam-ernakulum-60417",
-  "https://www.shiksha.com/university/sai-university-chennai-152431",
-  "https://www.shiksha.com/college/bengal-college-of-engineering-and-technology-durgapur-25045",
-  "https://www.shiksha.com/college/ssit-sri-siddhartha-institute-of-technology-tumkur-43009",
-  "https://www.shiksha.com/university/rai-university-ahmedabad-51945",
-  "https://www.shiksha.com/college/basaveshwar-engineering-college-karnataka-other-1344",
-  "https://www.shiksha.com/college/matoshri-college-of-engineering-and-research-centre-nashik-59575",
-  "https://www.shiksha.com/college/rewa-engineering-college-madhya-pradesh-other-21003",
-  "https://www.shiksha.com/university/ct-university-ctu-ludhiana-52820",
-  "https://www.shiksha.com/college/keystone-school-of-engineering-shindewadi-pune-47562",
-  "https://www.shiksha.com/college/yenepoya-institute-of-technology-mangalore-60051",
-  "https://www.shiksha.com/college/government-engineering-college-kozhikode-60447",
-  "https://www.shiksha.com/college/alamuri-ratnamala-institute-of-engineering-and-technology-thane-33000",
-  "https://www.shiksha.com/college/government-college-of-engineering-chandrapur-25064",
-  "https://www.shiksha.com/college/trinity-academy-of-engineering-kondhwa-pune-36919",
-  "https://www.shiksha.com/college/sri-aurobindo-institute-of-technology-indore-41352",
-  "https://www.shiksha.com/university/rajiv-gandhi-national-aviation-university-raebareli-65139",
-  "https://www.shiksha.com/college/kj-college-of-engineering-management-research-kondhwa-pune-36112",
-  "https://www.shiksha.com/college/sage-university-powered-by-sunstone-indore-151301",
-  "https://www.shiksha.com/university/radha-govind-university-ramgarh-64525",
+  "https://www.shiksha.com/college/pailan-college-of-management-and-technology-pcmt-joka-kolkata-24327",
+  "https://www.shiksha.com/university/ktu-apj-abdul-kalam-technological-university-thiruvananthapuram-51540",
+  "https://www.shiksha.com/college/nxtwave-institute-of-advanced-technologies-greater-noida-238560",
+  "https://www.shiksha.com/college/mvr-college-of-engineering-and-technology-andhra-pradesh-other-43222",
+  "https://www.shiksha.com/college/government-engineering-college-dahod-60181",
+  "https://www.shiksha.com/college/jawaharlal-nehru-government-engineering-college-sundernagar-67033",
+  "https://www.shiksha.com/college/indian-institute-of-handloom-technology-varanasi-98915",
+  "https://www.shiksha.com/college/info-institute-of-engineering-coimbatore-37113",
+  "https://www.shiksha.com/college/samarth-group-of-institutions-maharashtra-other-59985",
+  "https://www.shiksha.com/college/kalpataru-institute-of-technology-kit-tiptur-tumkur-20415",
+  "https://www.shiksha.com/university/the-institute-of-chartered-financial-analysts-of-india-university-tripura-tripura-other-187",
+  "https://www.shiksha.com/college/yadavrao-tasgaonkar-college-of-engineering-and-management-raigad-157127",
+  "https://www.shiksha.com/college/himalayan-school-of-science-and-technology-swami-rama-himalayan-university-dehradun-209157",
+  "https://www.shiksha.com/university/p-k-university-madhya-pradesh-other-64745",
+  "https://www.shiksha.com/college/samskruti-college-of-engineering-and-technology-ranga-reddy-42746",
+  "https://www.shiksha.com/college/shri-s-ad-vidya-mandal-institute-of-technology-bharuch-58889",
+  "https://www.shiksha.com/college/hirasugar-institute-of-technology-hsit-belgaum-21212",
+  "https://www.shiksha.com/college/euro-tech-maritime-academy-ernakulum-54965",
+  "https://www.shiksha.com/college/k-l-e-s-s-k-l-e-college-of-engineering-and-technology-chikodi-karnataka-other-59393",
+  "https://www.shiksha.com/college/malout-institute-of-management-and-information-technology-muktsar-28939",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =621
+    c_count =1121
 
     try:
         for base_url in BASE_URL:
