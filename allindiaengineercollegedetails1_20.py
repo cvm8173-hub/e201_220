@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/its-engineering-college-greater-noida-37467",
-  "https://www.shiksha.com/college/gopalan-college-of-engineering-and-management-k-r-puram-bangalore-47209",
-  "https://www.shiksha.com/college/sankalchand-patel-college-of-engineering-visnagar-21066",
-  "https://www.shiksha.com/college/t-john-institute-of-technology-bannerghatta-road-bangalore-28396",
-  "https://www.shiksha.com/college/international-institute-of-information-technology-pune-hinjewadi-47554",
-  "https://www.shiksha.com/college/narasaraopeta-engineering-college-autonomous-guntur-25422",
-  "https://www.shiksha.com/college/alva-s-institute-of-engineering-and-technology-mangalore-60049",
-  "https://www.shiksha.com/college/arya-college-of-engineering-and-information-technology-jaipur-37928",
-  "https://www.shiksha.com/college/m-v-j-college-of-engineering-whitefield-bangalore-20690",
-  "https://www.shiksha.com/college/chouksey-engineering-college-bilaspur-187421",
-  "https://www.shiksha.com/college/g-pullaiah-college-of-engineering-and-technology-kurnool-43188",
-  "https://www.shiksha.com/college/vcet-vivekananda-college-of-engineering-and-technology-karnataka-other-37877",
-  "https://www.shiksha.com/college/mahavir-education-trust-s-shah-and-anchor-kutchhi-engineering-college-sakec-chembur-mumbai-21137",
-  "https://www.shiksha.com/college/pimpri-chinchwad-college-of-engineering-and-research-ravet-pune-46948",
-  "https://www.shiksha.com/college/meerut-institute-of-engineering-and-technology-24958",
-  "https://www.shiksha.com/college/sjc-institute-of-technology-chikballpura-21210",
-  "https://www.shiksha.com/university/vivekananda-global-university-jaipur-42525",
-  "https://www.shiksha.com/college/gndec-guru-nanak-dev-engineering-college-bidar-37866",
-  "https://www.shiksha.com/college/b-b-s-college-of-engginering-and-technology-allahabad-59357",
-  "https://www.shiksha.com/college/jp-college-of-engineering-tirunelveli-48081",
+  "https://www.shiksha.com/college/indira-gandhi-institute-of-engineering-technology-kothamangalam-ernakulum-60417",
+  "https://www.shiksha.com/university/sai-university-chennai-152431",
+  "https://www.shiksha.com/college/bengal-college-of-engineering-and-technology-durgapur-25045",
+  "https://www.shiksha.com/college/ssit-sri-siddhartha-institute-of-technology-tumkur-43009",
+  "https://www.shiksha.com/university/rai-university-ahmedabad-51945",
+  "https://www.shiksha.com/college/basaveshwar-engineering-college-karnataka-other-1344",
+  "https://www.shiksha.com/college/matoshri-college-of-engineering-and-research-centre-nashik-59575",
+  "https://www.shiksha.com/college/rewa-engineering-college-madhya-pradesh-other-21003",
+  "https://www.shiksha.com/university/ct-university-ctu-ludhiana-52820",
+  "https://www.shiksha.com/college/keystone-school-of-engineering-shindewadi-pune-47562",
+  "https://www.shiksha.com/college/yenepoya-institute-of-technology-mangalore-60051",
+  "https://www.shiksha.com/college/government-engineering-college-kozhikode-60447",
+  "https://www.shiksha.com/college/alamuri-ratnamala-institute-of-engineering-and-technology-thane-33000",
+  "https://www.shiksha.com/college/government-college-of-engineering-chandrapur-25064",
+  "https://www.shiksha.com/college/trinity-academy-of-engineering-kondhwa-pune-36919",
+  "https://www.shiksha.com/college/sri-aurobindo-institute-of-technology-indore-41352",
+  "https://www.shiksha.com/university/rajiv-gandhi-national-aviation-university-raebareli-65139",
+  "https://www.shiksha.com/college/kj-college-of-engineering-management-research-kondhwa-pune-36112",
+  "https://www.shiksha.com/college/sage-university-powered-by-sunstone-indore-151301",
+  "https://www.shiksha.com/university/radha-govind-university-ramgarh-64525",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =201
+    c_count =621
 
     try:
         for base_url in BASE_URL:
