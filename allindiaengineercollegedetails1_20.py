@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/pailan-college-of-management-and-technology-pcmt-joka-kolkata-24327",
-  "https://www.shiksha.com/university/ktu-apj-abdul-kalam-technological-university-thiruvananthapuram-51540",
-  "https://www.shiksha.com/college/nxtwave-institute-of-advanced-technologies-greater-noida-238560",
-  "https://www.shiksha.com/college/mvr-college-of-engineering-and-technology-andhra-pradesh-other-43222",
-  "https://www.shiksha.com/college/government-engineering-college-dahod-60181",
-  "https://www.shiksha.com/college/jawaharlal-nehru-government-engineering-college-sundernagar-67033",
-  "https://www.shiksha.com/college/indian-institute-of-handloom-technology-varanasi-98915",
-  "https://www.shiksha.com/college/info-institute-of-engineering-coimbatore-37113",
-  "https://www.shiksha.com/college/samarth-group-of-institutions-maharashtra-other-59985",
-  "https://www.shiksha.com/college/kalpataru-institute-of-technology-kit-tiptur-tumkur-20415",
-  "https://www.shiksha.com/university/the-institute-of-chartered-financial-analysts-of-india-university-tripura-tripura-other-187",
-  "https://www.shiksha.com/college/yadavrao-tasgaonkar-college-of-engineering-and-management-raigad-157127",
-  "https://www.shiksha.com/college/himalayan-school-of-science-and-technology-swami-rama-himalayan-university-dehradun-209157",
-  "https://www.shiksha.com/university/p-k-university-madhya-pradesh-other-64745",
-  "https://www.shiksha.com/college/samskruti-college-of-engineering-and-technology-ranga-reddy-42746",
-  "https://www.shiksha.com/college/shri-s-ad-vidya-mandal-institute-of-technology-bharuch-58889",
-  "https://www.shiksha.com/college/hirasugar-institute-of-technology-hsit-belgaum-21212",
-  "https://www.shiksha.com/college/euro-tech-maritime-academy-ernakulum-54965",
-  "https://www.shiksha.com/college/k-l-e-s-s-k-l-e-college-of-engineering-and-technology-chikodi-karnataka-other-59393",
-  "https://www.shiksha.com/college/malout-institute-of-management-and-information-technology-muktsar-28939",
+  "https://www.shiksha.com/college/kakinada-institute-of-technological-sciences-andhra-pradesh-other-61331",
+  "https://www.shiksha.com/college/yamuna-group-of-institutions-yamuna-nagar-40177",
+  "https://www.shiksha.com/college/north-india-institute-of-technology-niit-najibabad-uttar-pradesh-other-43324",
+  "https://www.shiksha.com/college/maulana-mukhtar-ahmad-nadvi-technical-campus-maharashtra-other-59457",
+  "https://www.shiksha.com/college/miracle-educational-society-group-of-institutions-vizianagaram-60688",
+  "https://www.shiksha.com/college/gyan-sagar-college-of-engineering-61221",
+  "https://www.shiksha.com/college/chaitanya-bharathi-institute-of-technology-kadapa-71151",
+  "https://www.shiksha.com/college/nilachal-polytechnic-college-khurda-99651",
+  "https://www.shiksha.com/college/sims-sanghvi-institute-of-management-and-science-indore-30433",
+  "https://www.shiksha.com/college/sree-chaitanya-college-of-engineering-karimnagar-42741",
+  "https://www.shiksha.com/college/g-v-acharya-institute-of-engineering-and-technology-maharashtra-other-59921",
+  "https://www.shiksha.com/college/division-of-agriculture-engineering-srinagar-202089",
+  "https://www.shiksha.com/college/skp-engineering-college-skpec-tamil-nadu-other-22962",
+  "https://www.shiksha.com/college/dattakala-group-of-institution-maharashtra-other-60063",
+  "https://www.shiksha.com/college/bhagwan-parshuram-college-of-engineering-sonepat-32345",
+  "https://www.shiksha.com/college/gurukul-vidyapeeth-institute-of-engineering-and-technology-patiala-46853",
+  "https://www.shiksha.com/university/shri-khushal-das-university-hanumangarh-65073",
+  "https://www.shiksha.com/college/shree-ramchandra-college-of-enginnering-pune-147947",
+  "https://www.shiksha.com/college/kings-college-of-engineering-kce-punalkulam-tamil-nadu-other-48100",
+  "https://www.shiksha.com/college/vaishno-college-of-engineering-nurpur-58973",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =1121
+    c_count =1501
 
     try:
         for base_url in BASE_URL:
