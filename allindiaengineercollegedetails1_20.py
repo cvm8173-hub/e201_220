@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/rajiv-gandhi-university-of-knowledge-technologies-srikakulam-campus-rgukt-180519",
-  "https://www.shiksha.com/college/school-of-engineering-technology-mumbai-240630",
-  "https://www.shiksha.com/college/shankara-group-of-institution-shankara-institute-of-technology-jaipur-42326",
-  "https://www.shiksha.com/college/school-of-engineering-and-technology-iftm-university-moradabad-52959",
-  "https://www.shiksha.com/college/sengunthar-college-of-engineering-namakkal-61595",
-  "https://www.shiksha.com/college/travancore-engineering-college-kollam-65255",
-  "https://www.shiksha.com/college/varaprasad-reddy-institute-of-technology-guntur-146185",
-  "https://www.shiksha.com/college/government-professional-college-jamshedpur-156963",
-  "https://www.shiksha.com/college/center-for-pg-studies-vtu-belgaum-21527",
-  "https://www.shiksha.com/college/kc-group-of-institutions-nawanshahar-23160",
-  "https://www.shiksha.com/college/raj-kumar-goel-engineering-college-hapur-37420",
-  "https://www.shiksha.com/college/sahakar-maharshi-shankarao-mohite-patil-institute-of-technology-and-research-solapur-59793",
-  "https://www.shiksha.com/college/khandesh-bahuuddeshiya-sanstha-college-of-engineering-and-technology-north-maharashtra-knowledge-city-jalgaon-59949",
-  "https://www.shiksha.com/college/tatva-institute-of-technological-studies-modasa-gujarat-other-60239",
-  "https://www.shiksha.com/college/dr-paul-raj-engineering-college-east-godavari-60590",
-  "https://www.shiksha.com/college/prem-prakash-gupta-institute-of-engineering-bareilly-66399",
-  "https://www.shiksha.com/college/pr-engineering-college-prec-thanjavur-20824",
-  "https://www.shiksha.com/college/lord-jegannath-college-of-engineering-and-technology-ljcet-kanyakumari-43299",
-  "https://www.shiksha.com/college/snm-institute-of-management-and-technology-ernakulum-60626",
-  "https://www.shiksha.com/college/rise-krishna-sai-gandhi-group-of-institutions-ongole-60937",
+  "https://www.shiksha.com/college/s-d-institute-of-pharmacy-panipat-237394",
+  "https://www.shiksha.com/college/chandrapur-college-of-pharmacy-237424",
+  "https://www.shiksha.com/college/kklk-college-of-pharmacy-uttar-pradesh-other-237530",
+  "https://www.shiksha.com/college/n-b-s-college-sultanpur-uttar-pradesh-other-237552",
+  "https://www.shiksha.com/college/kauvery-hospital-heart-city-trichy-240722",
+  "https://www.shiksha.com/college/kims-hospital-hyderabad-240726",
+  "https://www.shiksha.com/college/shri-balaji-institute-of-dental-sciences-raipur-244932",
+  "https://www.shiksha.com/college/shri-k-r-pandav-college-of-physiotherapy-bhandara-245088",
+  "https://www.shiksha.com/college/sai-nath-college-agra-149017",
+  "https://www.shiksha.com/college/rama-and-krishna-college-of-pharmacy-district-mahendergarh-self-financed-mahendragarh-179885",
+  "https://www.shiksha.com/college/rklkd-pharmacy-college-nalgonda-181079",
+  "https://www.shiksha.com/college/burman-group-of-institution-uttarakhand-other-181085",
+  "https://www.shiksha.com/college/ram-nagina-college-of-pharmacy-uttar-pradesh-other-181365",
+  "https://www.shiksha.com/college/vinayak-pharmacy-college-azamgarh-181641",
+  "https://www.shiksha.com/college/sd-pal-college-of-pharmacy-hardoi-181835",
+  "https://www.shiksha.com/college/prestige-medical-health-sciences-bangalore-186285",
+  "https://www.shiksha.com/college/spurthy-college-of-physiotherapy-bangalore-186379",
+  "https://www.shiksha.com/college/government-n-p-a-ayurved-college-g-e-road-raipur-187557",
+  "https://www.shiksha.com/college/college-of-pharmacy-roorkee-188269",
+  "https://www.shiksha.com/college/dr-deepak-patil-nursing-institute-kolhapur-189259",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =1921
+    c_count =3641
 
     try:
         for base_url in BASE_URL:
