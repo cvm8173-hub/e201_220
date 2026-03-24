@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/indira-institute-college-of-pharmacy-pune-237434",
-  "https://www.shiksha.com/college/max-super-specialty-hospital-mohali-240518",
-  "https://www.shiksha.com/college/paramitha-children-s-hospital-hyderabad-240540",
-  "https://www.shiksha.com/college/renova-century-hospitals-hyderabad-240562",
-  "https://www.shiksha.com/college/sr-kalla-memorial-gastro-general-hospital-jaipur-240578",
-  "https://www.shiksha.com/college/fortis-hospital-anandapur-kolkata-240688",
-  "https://www.shiksha.com/college/hcg-cancer-centre-mansarovar-jaipur-240702",
-  "https://www.shiksha.com/college/b-t-savani-kidney-hospital-rajkot-240762",
-  "https://www.shiksha.com/college/sunrise-institute-of-pharmacy-dehradun-89271",
-  "https://www.shiksha.com/college/shree-swaminarayan-college-of-pharmacy-kalol-101707",
-  "https://www.shiksha.com/college/k-d-c-a-institute-of-pharmacy-kolhapur-125809",
-  "https://www.shiksha.com/college/christiana-medicala-college-vellore-140687",
-  "https://www.shiksha.com/college/uma-college-of-pharmacy-uttar-pradesh-other-148749",
-  "https://www.shiksha.com/college/jain-college-of-pharmacy-fazilka-154869",
-  "https://www.shiksha.com/college/dhanvanthari-institute-of-pharmaceutical-science-kothagudem-156627",
-  "https://www.shiksha.com/college/dbm-college-of-pharmacy-sonepat-156875",
-  "https://www.shiksha.com/college/manav-institute-of-pharmacy-village-jevra-district-hisar-self-financed-179879",
-  "https://www.shiksha.com/college/javitri-institute-of-medical-science-and-pharmacy-uttar-pradesh-other-181247",
-  "https://www.shiksha.com/college/ranwat-singh-college-of-pharmacy-uttar-pradesh-other-181367",
-  "https://www.shiksha.com/college/vishwanath-memorial-college-of-pharmacy-uttar-pradesh-other-181597",
+  "https://www.shiksha.com/college/domohana-pharmacy-college-west-bengal-other-237262",
+  "https://www.shiksha.com/college/jrset-college-of-pharmacy-nadia-237284",
+  "https://www.shiksha.com/college/parbatipur-college-of-pharmacy-medical-sciences-west-bengal-other-237326",
+  "https://www.shiksha.com/college/cygnus-institute-of-gastroenterology-hyderabad-240674",
+  "https://www.shiksha.com/college/indian-institute-of-liver-and-digestive-sciences-kolkata-240706",
+  "https://www.shiksha.com/college/cachar-cancer-hospital-and-research-centre-silchar-240766",
+  "https://www.shiksha.com/college/specialists-hospital-kochi-240882",
+  "https://www.shiksha.com/college/cks-hospital-jaipur-243790",
+  "https://www.shiksha.com/college/b-r-degree-college-mahendragarh-127095",
+  "https://www.shiksha.com/college/meerut-college-of-higher-education-143803",
+  "https://www.shiksha.com/college/dhule-charitable-society-s-institute-of-pharmacy-147631",
+  "https://www.shiksha.com/college/maa-saraswati-college-of-pharmacy-ferozpur-148115",
+  "https://www.shiksha.com/college/arulmurugan-polytechnic-college-karur-148281",
+  "https://www.shiksha.com/college/divya-college-of-pharmacy-uttar-pradesh-other-148729",
+  "https://www.shiksha.com/college/swami-kalyan-dev-pharmacy-college-uttar-pradesh-other-148935",
+  "https://www.shiksha.com/college/br-pharmacy-college-azamgarh-149045",
+  "https://www.shiksha.com/college/dhanvanthari-institute-of-pharmaceutical-science-kothagudem-156465",
+  "https://www.shiksha.com/college/sri-siddhalingeshwar-college-of-pharmacy-karnataka-other-156741",
+  "https://www.shiksha.com/college/shri-radhakrishan-college-bhopal-157071",
+  "https://www.shiksha.com/college/azad-college-of-pharmacy-azamgarh-181117",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =4001
+    c_count =4361
 
     try:
         for base_url in BASE_URL:
