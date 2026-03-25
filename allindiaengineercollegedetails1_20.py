@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/domohana-pharmacy-college-west-bengal-other-237262",
-  "https://www.shiksha.com/college/jrset-college-of-pharmacy-nadia-237284",
-  "https://www.shiksha.com/college/parbatipur-college-of-pharmacy-medical-sciences-west-bengal-other-237326",
-  "https://www.shiksha.com/college/cygnus-institute-of-gastroenterology-hyderabad-240674",
-  "https://www.shiksha.com/college/indian-institute-of-liver-and-digestive-sciences-kolkata-240706",
-  "https://www.shiksha.com/college/cachar-cancer-hospital-and-research-centre-silchar-240766",
-  "https://www.shiksha.com/college/specialists-hospital-kochi-240882",
-  "https://www.shiksha.com/college/cks-hospital-jaipur-243790",
-  "https://www.shiksha.com/college/b-r-degree-college-mahendragarh-127095",
-  "https://www.shiksha.com/college/meerut-college-of-higher-education-143803",
-  "https://www.shiksha.com/college/dhule-charitable-society-s-institute-of-pharmacy-147631",
-  "https://www.shiksha.com/college/maa-saraswati-college-of-pharmacy-ferozpur-148115",
-  "https://www.shiksha.com/college/arulmurugan-polytechnic-college-karur-148281",
-  "https://www.shiksha.com/college/divya-college-of-pharmacy-uttar-pradesh-other-148729",
-  "https://www.shiksha.com/college/swami-kalyan-dev-pharmacy-college-uttar-pradesh-other-148935",
-  "https://www.shiksha.com/college/br-pharmacy-college-azamgarh-149045",
-  "https://www.shiksha.com/college/dhanvanthari-institute-of-pharmaceutical-science-kothagudem-156465",
-  "https://www.shiksha.com/college/sri-siddhalingeshwar-college-of-pharmacy-karnataka-other-156741",
-  "https://www.shiksha.com/college/shri-radhakrishan-college-bhopal-157071",
-  "https://www.shiksha.com/college/azad-college-of-pharmacy-azamgarh-181117",
+  "https://www.shiksha.com/college/kai-yashodabai-dagadu-saraf-charitable-college-jalgaon-198881",
+  "https://www.shiksha.com/college/centre-for-distance-and-online-education-mizoram-university-aizawl-202995",
+  "https://www.shiksha.com/college/mcs-college-of-sciences-and-technology-jhansi-208319",
+  "https://www.shiksha.com/college/nandadeep-school-of-optometry-sangli-215919",
+  "https://www.shiksha.com/college/ana-institute-of-pharmaceutical-science-research-bareilly-59297",
+  "https://www.shiksha.com/college/srinivasa-institute-of-pharmaceutical-sciences-andhra-pradesh-other-60957",
+  "https://www.shiksha.com/college/st-anns-college-of-pharamacy-vizianagaram-61001",
+  "https://www.shiksha.com/college/bajiraoji-karanjekar-college-of-pharmacy-bhandara-87693",
+  "https://www.shiksha.com/college/smt-manjira-devi-shikshan-and-prashikshan-institute-uttarakhand-other-89269",
+  "https://www.shiksha.com/college/prem-raghu-institute-of-pharmacy-hathras-99855",
+  "https://www.shiksha.com/college/apollo-speciality-hospitals-tamil-nadu-other-106071",
+  "https://www.shiksha.com/college/sri-baijnath-shivkala-mahavidyalaya-barabanki-120749",
+  "https://www.shiksha.com/college/hellen-keller-s-instiute-of-research-and-rehabilitation-for-the-disabled-children-secunderabad-123883",
+  "https://www.shiksha.com/college/dasmesh-college-of-pharmacy-faridkot-89083",
+  "https://www.shiksha.com/college/pdm-school-of-pharmacy-karsindhu-jind-89307",
+  "https://www.shiksha.com/college/kamla-nehru-polytechnic-college-aurangabad-99253",
+  "https://www.shiksha.com/college/vivek-college-of-ayurvedic-sciences-and-hospital-bijnor-184367",
+  "https://www.shiksha.com/college/athena-institute-of-health-sciences-mangalore-186267",
+  "https://www.shiksha.com/college/sri-rama-educational-college-of-physiotherapy-vizianagaram-188855",
+  "https://www.shiksha.com/college/emversity-school-of-hospitality-kolkata-salt-lake-city-237004",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =4361
+    c_count =2661
 
     try:
         for base_url in BASE_URL:
